@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    height: 100px;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    padding: 32px;
+
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    opacity: 0px;
+    padding-right: 32px;
+}
+
+ul li {
+    width: 98px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    color: black;
+    font-family: "Spline Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.7px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.c {
+    animation-name: c;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes c {
+    0% {
+        fill: white;
+    }
+
+    25% {
+        fill: rgba(91, 206, 255, 1);
+    }
+}
+
+.l {
+    animation-name: l;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes l {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: rgba(247, 222, 93, 1);
+
+    }
+
+}
+
+.u {
+    animation-name: u;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes u {
+    0% {
+        fill: white;
+    }
+
+    75% {
+        fill: rgba(255, 126, 126, 1);
+    }
+
+}
+
+.b {
+    animation-name: b;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes b {
+    0% {
+        fill: white;
+    }
+
+    100% {
+        fill: rgba(125, 249, 122, 1);
+    }
+}
+
+.rightside {
+    flex: 1;
+    height: 600px;
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.rightside img:nth-of-type(1) {
+    position: absolute;
+    height: 600px;
+    opacity: 0px;
+}
+
+.rightside img:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+
+}
+
+.rightside img:nth-of-type(3) {
+    position: absolute;
+    width: 246.33px;
+    height: 250.76px;
+    top: 329.24px;
+    left: 20px;
+    animation: three 10s linear infinite;
+
+}
+
+button:hover {
+    translate: 4px -5px;
+    transition: all 500ms;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+button:active {
+    translate: 0 0;
+    box-shadow: 0 0 black;
+}
+
+@keyframes three {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes four {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rightside img:nth-of-type(4) {
+    position: absolute;
+    width: 111.29px;
+    height: 111.29px;
+    top: 55.84px;
+    left: 600px;
+    animation: four 5s linear infinite;
+}
+
+
+.leftside {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 32px;
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    border-right: 3px solid black;
+}
+
+main h1 {
+    width: 706.45px;
+    height: 173.52px;
+    font-family: "Spline Sans";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75.84px;
+    text-align: left;
+}
+
+main p {
+    width: 716.86px;
+    height: 108px;
+    font-family: "Spline Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+main button {
+    width: 250px;
+    height: 60px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background-color: rgba(248, 254, 94, 1);
+
+    font-family: Spline Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(202, 255, 255, 1);
+    height: 153px;
+    top: 700px;
+    padding: 32.65px 24.03px 17.38px 76.5px;
+    gap: 0px;
+    border: 0px 0px 3px 0px;
+    opacity: 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+}
